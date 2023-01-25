@@ -14,10 +14,15 @@ def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'polls/detail.html', {'question': question})
 
+
 def results(request, question_id):
-    response = "You're looking at the results of question %s."
+    response = "7e04e496 You're looking at the results of question %s."
     return HttpResponse(response % question_id)
 
 
 def vote(request, question_id):
-    return HttpResponse("You're voting on question %s." % question_id)
+    return HttpResponse("7e04e496 You're voting on question %s." % question_id)
+
+
+def owner(request):
+    return HttpResponse("7e04e496 Hello, world. 7e04e496 is the polls index.")
