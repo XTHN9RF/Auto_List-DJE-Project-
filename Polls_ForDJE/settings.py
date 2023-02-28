@@ -26,11 +26,12 @@ SECRET_KEY = 'django-insecure-!82=)^nm%d$o7tr93nadz-2y0*kfr0j+4kk(!t9dlz-c-k(t-w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['6b60-195-16-79-47.eu.ngrok.io']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'hello.apps.HelloConfig',
     'home.apps.HomeConfig',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
