@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 
 # Create your views here.
@@ -20,5 +21,5 @@ def session_view(request):
     request.session['num_visits'] = num_visits
     if num_visits > 4:
         del (request.session['num_visits'])
-    resp = HttpResponse('view count=' + str(num_visits))
-    return
+    context = {'num_visits': int(num_visits)}
+    return render(request, "templates/hello/hello.html", context)
