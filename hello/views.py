@@ -22,4 +22,6 @@ def session_view(request):
     if num_visits > 4:
         del (request.session['num_visits'])
     context = {'num_visits': int(num_visits)}
-    return render(request, "hello/hello.html", context)
+    response = HttpResponse(render(request, "hello/hello.html", context))
+    response.set_cookie('dj4e_cookie', '05697152', max_age=1000)
+    return response
