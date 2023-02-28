@@ -22,4 +22,4 @@ def session_view(request):
     if num_visits > 4:
         del (request.session['num_visits'])
     context = {'num_visits': int(num_visits)}
-    return render(request, "templates/hello/hello.html", context)
+    return render(request, "hello/hello.html", context)
