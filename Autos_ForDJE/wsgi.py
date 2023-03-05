@@ -1,5 +1,5 @@
 """
-WSGI config for Polls_ForDJE project.
+WSGI config for Autos_ForDJE project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Polls_ForDJE.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Autos_ForDJE.settings')
 
 application = get_wsgi_application()
