@@ -3,7 +3,7 @@ from cats.models import Breed
 
 
 # Create the form class.
-class MakeForm(ModelForm):
+class BreedForm(ModelForm):
     class Meta:
         model = Breed
         fields = '__all__'
