@@ -17,14 +17,14 @@
     <p>There are no cats in the library.</p>
   {% endif %}
   <p>
-    {% if make_count > 0 %}
-      <a href="{% url 'cats:cat_create' %}">Add an cat</a>
+    {% if breed_count > 0 %}
+      <a href="{% url 'cats:breed_create' %}">Add a breed</a>
     {% else %}
       Please add a breed before you add a cat.
     {% endif %}
   </p>
   <p>
   <a href="{% url 'cats:breed_list' %}">View breeds</a> ({{ breed_count }}) |
-    <a href="{% url 'cats:breed_create' %}">Add a breed</a>
+    <a href="{% url 'cats:cat_create' %}">Add a cat</a>
   </p>
 {% endblock %}
